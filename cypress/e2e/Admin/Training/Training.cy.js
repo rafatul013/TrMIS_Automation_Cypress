@@ -18,10 +18,21 @@ describe("Check Training Page", () => {
 
     })
     
-    it('Date Filtering', () => {
-        cy.wait(1000)
+    // it('Check Searching work on training course', () => {
+    //     cy.wait(1000)
+    //     training.Opentraining();
+    //     training.CheckSerach();
+    // })
+    
+    // it('Check add training course', () => {
+    //     training.Opentraining();
+    //     training.AddCourse();
+    // })
+    it('Check Update training course', () =>{
         training.Opentraining();
+        training.Updatecourse();
     })
+    
     
     // it('User should be able to logout', () => {
     //     userlogout.logout();

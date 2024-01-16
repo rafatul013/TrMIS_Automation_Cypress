@@ -4,7 +4,8 @@ describe("Check TrMIS Website",()=>{
     const visitpage =new BaseUrl();
 
         it("Visit TrMIS website successfully",()=>{
-            visitpage.visitpage();
+           visitpage.visitpage();
+          // cy.visit('/admin')
             
         })
         it("Visit TrMIS login successfully",()=>{
