@@ -24,7 +24,9 @@ describe("Check Admin Dashboard ", () => {
     
     it('Date Filtering', () => {
         cy.wait(1000)
-        admindashboard.datefiltering();
+        admindashboard.Selectyear();
+        admindashboard.SelectFromMonth();
+        admindashboard.SelectTmMonth();
     })
     
     it('User should be able to logout', () => {

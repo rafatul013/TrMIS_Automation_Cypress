@@ -6,7 +6,7 @@ class  BaseUrl {
      }
      visitadmindashboard () {
        cy.visit('https://trmis.inneed.cloud/')
-        //cy.visit('http://localhost:5173/')
+       // cy.visit('http://localhost:5173/')
         .window()
         .then((win) => {
             win.history.pushState({}, '', 'login');

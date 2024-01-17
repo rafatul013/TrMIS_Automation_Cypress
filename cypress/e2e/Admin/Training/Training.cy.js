@@ -15,28 +15,28 @@ describe("Check Training Page", () => {
         userlogin.loginwithusercred();
         //cy.reload(false)
         cy.wait(1000)
-
+    })
+    it('Check Searching work on training course', () => {
+        cy.wait(1000)
+        training.Opentraining();
+        training.CheckSerach();
     })
     
-    // it('Check Searching work on training course', () => {
-    //     cy.wait(1000)
-    //     training.Opentraining();
-    //     training.CheckSerach();
-    // })
-    
-    // it('Check add training course', () => {
-    //     training.Opentraining();
-    //     training.AddCourse();
-    // })
+    it('Check add training course', () => {
+        training.Opentraining();
+        training.AddCourse();
+    })
     it('Check Update training course', () =>{
         training.Opentraining();
         training.Updatecourse();
     })
-    
-    
-    // it('User should be able to logout', () => {
-    //     userlogout.logout();
-    // })
+    it('Check Delete training course', () =>{
+        training.Opentraining();
+        training.Deletecourse();
+    })
+    it('User should be able to logout', () => {
+        userlogout.logout();
+    })
 
 
 
